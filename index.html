@@ -11,7 +11,7 @@
 <input type="file" accept="image/*" capture="camera" onchange="sendImage(event)">
 
 <script>
-    const socket = new WebSocket("https://santhosh-mee.github.io/ClipDrop"); // Replace "your-server-ip" with your actual server's IP address
+    const socket = new WebSocket("ws://santhosh-mee.github.io/ClipDrop"); // Replace "your-server-ip" with your actual server's IP address
 
     socket.addEventListener('open', (event) => {
         console.log('WebSocket connection opened:', event);
